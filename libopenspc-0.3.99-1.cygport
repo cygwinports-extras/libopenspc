@@ -1,0 +1,13 @@
+DESCRIPTION="SNES audio file playback library"
+HOMEPAGE="http://home.comcast.net/~brad.martin1/"
+SRC_URI="http://home.comcast.net/~brad.martin1/OpenSPC_snap-20050926.tar.bz2"
+
+abi=0
+PKG_NAMES="${PN} ${PN}${abi} ${PN}-devel"
+PKG_HINTS="setup dll devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
+PKG_IGNORE="usr/bin/*.exe"
+
+DOCS="libopenspc/SNEeSe/LICENSE"

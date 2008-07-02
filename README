@@ -1,0 +1,71 @@
+libopenspc
+------------------------------------------
+libopenspc provides a library that allows for the emulated playback of 
+SPC files, which are SNES audio files. It uses the SNEeSe emulator sound 
+core for accurate playback.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://home.comcast.net/~brad.martin1/
+
+Canonical download:
+  http://home.comcast.net/~brad.martin1/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libopenspc-0.3.99-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libopenspc-0.3.99-X.cygport all
+
+This will create:
+  /usr/src/libopenspc-0.3.99-X-src.tar.bz2
+  /usr/src/libopenspc-0.3.99-X.tar.bz2
+  /usr/src/libopenspc-devel-0.3.99-X.tar.bz2
+  /usr/src/libopenspc0-0.3.99-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libopenspc0)
+  /usr/bin/cygopenspc-0.dll
+  /usr/share/doc/libopenspc-0.3.99/COPYING
+  /usr/share/doc/libopenspc-0.3.99/ChangeLog
+  /usr/share/doc/libopenspc-0.3.99/INSTALL
+  /usr/share/doc/libopenspc-0.3.99/LICENSE
+  /usr/share/doc/libopenspc-0.3.99/README
+
+(libopenspc-devel)
+  /usr/include/openspc.h
+  /usr/lib/libopenspc.a
+  /usr/lib/libopenspc.dll.a
+  /usr/lib/libopenspc.la
+
+------------------
+
+Port Notes:
+
+----- version 0.3.99-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
