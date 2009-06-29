@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin zlib libopenspc0
+requires: zlib libopenspc0
 external-source: libopenspc
 sdesc: "SNES audio file playback library (development)"
 ldesc: "libopenspc provides a library that allows for the emulated 
